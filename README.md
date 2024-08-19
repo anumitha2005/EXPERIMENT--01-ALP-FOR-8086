@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : ANUMITHA. M. R
+Roll no 212223040018
+Date of experiment :16/08/2024
 
 
 
@@ -78,24 +78,58 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
-
-
+```
+ org 100h
+ MOV al,11h;
+ MOV bl,20h;
+ ADD al,bl;
+ MOV [6379h],al;
+ ret
+```
 ## Output  
- 
+ ![Screenshot 2024-08-19 132424](https://github.com/user-attachments/assets/e848d258-fe36-46bf-8e15-2e06654b3571)
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
+ ```
+ org 100h
+ MOV al,20h;
+ MOV bl,[8778h];
+ SUB bl,al;
+ MOV [8798h],bl;
+ ret
+ ```
 ## Output  
+![Screenshot 2024-08-19 132446](https://github.com/user-attachments/assets/d1279164-d526-474b-8c82-58df8f8cbbf6)
+
 ## Multiplication alp 
+```
+org 100h
+ MOV al,13h;
+ MOV bl,2h;
+ MUL bl;
+ MOV [6063h],bl;
+ ret
+ ```
  ## Output  
+![Screenshot 2024-08-19 132500](https://github.com/user-attachments/assets/b2922702-87a8-4161-9133-52c3f1c3cd42)
 
 
 ## Division alp 
+```
+ org 100h
+ MOV al,26h;
+ MOV bl,[2369h];
+ DIV bl;
+ MOV [2399h],al;
+ ret
+ ```
 
 ## Output  
+![Screenshot 2024-08-19 132514](https://github.com/user-attachments/assets/ae1daa88-cbb4-47e4-8e34-54602e2526e9)
 
 
 ## Result :
+Above program is executed successfully.
  
 
 
