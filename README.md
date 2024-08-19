@@ -136,6 +136,63 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ![Screenshot 2024-08-19 132514](https://github.com/user-attachments/assets/d5723e5b-6cae-4fb1-81c3-f344f167a4e9)
 
+## Programs for Logical Operations
+
+## OR Operation
+```
+ org 100H  
+ MOV SI,0532H;
+ MOV AX,0A32H;
+ MOV BX,0B13H;
+ OR AX,BX;
+ ret
+```
+
+## Output
+![Screenshot 2024-08-19 132553](https://github.com/user-attachments/assets/c3c15494-3352-4430-9c14-34bc491830f2)
+
+## AND Operation
+```
+ org 100H  
+MOV [SI],AX;
+ MOV AX,0A32H;
+ MOV BX,0B13H;
+ AND AX,BX; 
+ret
+```
+## Output
+
+![Screenshot 2024-08-19 132610](https://github.com/user-attachments/assets/b2f7438f-8b0c-4134-abb0-1d50d8259019)
+
+
+## XOR Operation
+```
+org 100H  
+MOV [SI+2],AX;
+ MOV AX,0A32H;
+ MOV BX,0B13H; 
+XOR AX,BX;  
+ret
+```
+
+## Output
+
+![Screenshot 2024-08-19 132628](https://github.com/user-attachments/assets/411a03fc-6dfb-4938-89d1-8a7601b840b9)
+
+## NOT Operation
+
+```
+ org 100H  
+ MOV [SI+4],AX;
+ MOV AX,0A32H;
+ NOT AX; 
+ MOV [SI+6],AX;
+ ret
+```
+
+## Output
+
+![Screenshot 2024-08-19 132643](https://github.com/user-attachments/assets/cc9ae1c2-0a23-4637-b5eb-1256dfad190e)
 
 ## Result :
   Above program is executed successfully.
