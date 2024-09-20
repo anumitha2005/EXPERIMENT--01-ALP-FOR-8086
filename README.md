@@ -195,7 +195,7 @@ ret
 ![Screenshot 2024-08-19 132643](https://github.com/user-attachments/assets/cc9ae1c2-0a23-4637-b5eb-1256dfad190e)
 
 ## Result :
-  Above program is executed successfully.
+  Thus, APL for fundamental arithmetic and logical operations are executed successfully.
  
 
 
